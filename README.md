@@ -1,2 +1,3 @@
 # pyjango
-Django pages
+
+# Django Notes
