@@ -6,11 +6,11 @@ from .models import member
 from .forms import Myform
 
 
-##########
+##########   "/"
 def index(request):
 	members=member.objects.all()
 	return render(request,'index.html',{"members":members})
-####	
+####	  /add
 def add(request):
   if request.method == "POST":
     form = Myform(request.POST)
@@ -19,7 +19,7 @@ def add(request):
   else:
       form = Myform()
   return render(request, 'form.html', {'form': form})
- ####
+ ####  
 def dlt(request,id):
    memdlt=member.objects.get(id=id)
    memdlt.delete()
