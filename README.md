@@ -1,3 +1,3 @@
 # pyjango
 
-# Django Notes
+# Django 
